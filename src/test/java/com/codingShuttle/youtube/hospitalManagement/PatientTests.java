@@ -62,10 +62,10 @@ public class PatientTests {
 //            System.out.println(bge);
 //        }
 
-        Page<Patient> patientList = patientRepository.findAllPatient(PageRequest.of(0,2));
-        for(Patient p:patientList){
-            System.out.println(p);
-        }
+//        Page<Patient> patientList = patientRepository.findAllPatient(PageRequest.of(0,2));
+//        for(Patient p:patientList){
+//            System.out.println(p);
+//        }
 
     }
 
