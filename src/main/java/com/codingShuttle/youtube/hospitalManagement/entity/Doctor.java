@@ -29,4 +29,12 @@ public class Doctor {
 
     @OneToMany(mappedBy = "doctor")
     private List<Appointment> appointmentList;
+
+    @OneToOne(mappedBy = "headDoctor")
+    private Department department;
+
+    @ManyToMany(mappedBy = "doctorList")
+    private List<Department> departmentList;
+
+
 }
