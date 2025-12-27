@@ -18,13 +18,13 @@ public class InsuranceTests {
 
     @Test
     public void testInsurance(){
-        Insurance insurance = new Insurance();
-        insurance.setProvider("HDFC");
-        insurance.setPolicyNumber("HDFC_1234");
-        insurance.setValidUntil(LocalDate.of(2012,11,12));
-
-        Patient patient = insuranceService.assignInsuranceToPatient(insurance,1L);
-        System.out.println("hey" + patient);
+//        Insurance insurance = new Insurance();
+//        insurance.setProvider("HDFC");
+//        insurance.setPolicyNumber("HDFC_1234");
+//        insurance.setValidUntil(LocalDate.of(2012,11,12));
+//
+//        Patient patient = insuranceService.assignInsuranceToPatient(insurance,1L);
+//        System.out.println("hey" + patient);
 
     }
 

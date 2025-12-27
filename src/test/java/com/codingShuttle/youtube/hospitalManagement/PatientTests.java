@@ -57,6 +57,9 @@ public class PatientTests {
 //            System.out.println(p);
 //        }
 
+
+        patientService.deletePatientById(1L);
+
     }
 
 }

@@ -44,7 +44,7 @@ public class Patient {
     @JoinColumn(unique = true)  //owning side
     private Insurance insurance;
 
-    @OneToMany(mappedBy = "patient")
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.REMOVE)
     @ToString.Exclude
     private List<Appointment> appointmentList;
 
