@@ -1,4 +1,4 @@
-package com.codingShuttle.youtube.hospitalManagement.serviice;
+package com.codingShuttle.youtube.hospitalManagement.service;
 
 import com.codingShuttle.youtube.hospitalManagement.entity.Patient;
 

@@ -2,12 +2,19 @@ package com.codingShuttle.youtube.hospitalManagement.entity;
 
 
 import jakarta.persistence.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
+@Getter
+@Setter
+@ToString
 public class Insurance {
 
     @Id
@@ -27,6 +34,7 @@ public class Insurance {
     @Column(updatable = false)
     private LocalDateTime createdAt;
 
+    @ToString.Exclude
     @OneToOne(mappedBy = "insurance") //inverse side
     private Patient patient;
 
