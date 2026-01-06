@@ -58,7 +58,7 @@ public class PatientTests {
 //        }
 
 
-        patientService.deletePatientById(1L);
+       // patientService.deletePatientById(1L);
 
     }
 
