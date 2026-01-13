@@ -1,6 +1,7 @@
 package com.codingShuttle.youtube.hospitalManagement.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -35,6 +36,7 @@ public class Doctor {
 
     @OneToMany(mappedBy = "doctor")
     @ToString.Exclude
+    @JsonIgnore
     private List<Appointment> appointmentList;
 
 //    @OneToOne(mappedBy = "headDoctor")
@@ -42,6 +44,7 @@ public class Doctor {
 
     @ToString.Exclude
     @ManyToMany(mappedBy = "doctorList")
+    @JsonIgnore
     private List<Department> departmentList;
 
 
